@@ -1,0 +1,366 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #FAFAFA;
+}
+
+/*Header and nav */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 2rem 0 2rem 0;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: .8rem;
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #202020;
+}
+
+header img {
+    width: 2.141rem;
+    height: 2.141rem;
+    margin-top: 0.1rem;
+    margin-left: 1rem;
+}
+
+header h1 {
+    font-size: 1rem;
+}
+
+
+/* Middle Section */
+
+.link-post {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.6em;    
+    border-bottom: 3px solid #ffff;
+}
+
+
+.middle-section {
+    background-image: url("/images/article-image-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+    color: #ffff;
+    text-align: start;
+    padding: 1rem;
+}
+
+.middle-section p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    max-width: 25rem;
+    margin-bottom: 1rem;
+}
+
+.middle-section h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.middle-section div {
+    padding-top: 25%;
+
+}
+
+/* card section */
+
+.article-section {
+    margin: 1.5rem;
+
+}
+.card-list {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card p {
+    max-width: 23rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+}
+
+.card img {
+    border-radius: 1rem;
+    width: 309px;
+    max-width: 100%
+}
+
+.view-more {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hidden-cards {
+    display: none;
+}
+
+
+footer {
+    background-color: #202020;
+    width: 100%;
+    height: 6.563rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer h3 {
+    color:#ECECEC;
+}
+
+footer p {
+    color: #D7D7D7;
+;
+}
+
+@media screen and (min-width: 700px) {
+
+
+
+    header nav ul{
+        font-size: 1rem;
+        margin-right: 2rem;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+    
+    header div {
+        gap: 1.5rem;
+    }
+    
+    header div h1{
+        font-size: 2rem;
+
+    }
+
+    header div img {
+        margin-top: 1rem;
+        margin-left: .5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .middle-section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    .middle-section {
+        height: 40rem;
+        background-position: center;
+        image-rendering: optimizeSpeed;
+        background-image: url("/images/blog-image-hero.png");
+    }
+    .middle-section div p {
+        font-size: 1.5rem;
+        max-width: 50rem;
+        font-weight: 300;
+    }
+    .middle-section div h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 1rem;
+        margin: 5rem;
+        
+    }
+    .article-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 550px) and (max-width: 640px) {
+
+    .middle-section div {
+        padding-top: 20%;
+        
+    }
+
+
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+
+    .middle-section div {
+        padding-top: 40%;
+        
+    }
+
+    
+
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+
+    .middle-section div {
+        padding-top: 35%;
+    }
+
+}
+
+
+@media (min-width: 1250px) and (max-width: 1400px) {
+
+    .middle-section div {
+        padding-top: 30%;
+    }
+
+}
+
+
+/* Post HTML*/
+
+
+.first-text {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.first-text p{
+    font-size: 1rem;
+
+
+}
+
+.first-text h1 {
+    font-size: 2rem;
+}
+
+.first-text h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.Recent-post {
+    text-align: center;
+    margin: 2rem;
+    text-decoration: underline;
+    
+}
+
+.main-image {
+    width: 90vw;
+    height: 100%;
+    align-self: center;
+    margin: 2rem;
+}
+
+.first-text p, .first-text  h3, .first-text  h1, header div{
+    margin: 0 3em 1rem 2rem;
+}
+
+.avatar-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    max-width: 80vw;
+    
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    .main-image {
+        height: 100%;
+
+    }
+    .first-text p, .first-text  h3, .first-text  h1 {
+        margin: 0 3em 1rem 10rem;
+    }
+
+        
+
+
+    .first-text p {
+        max-width: 60rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+
+/* aboutMe.html */
+
+.avatar {
+    width: 182px;
+    height: 182px;
+    border-radius: 30rem;
+    margin: 1rem 1rem 3rem 2rem;
+}
+
+@media screen and (min-width: 700px) {
+    .avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 30rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .avatar-section div {
+        min-width: 21rem;
+    }
+
+    .first-text p, .first-text  h3, .first-text  h1 {
+        margin: 0 7em 1rem 10rem;
+        max-width: 50rem;
+    }
+    .image-text {
+        margin: 5rem;
+    
+    }
+
+    .avatar-section {
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+
+
